@@ -36,7 +36,7 @@ extension Student {
     var jsonData: Data? {
         return (try? JSONSerialization.data(withJSONObject: dictionaryRepresentation, options: .prettyPrinted))
     }
-    
+
     
 }
 

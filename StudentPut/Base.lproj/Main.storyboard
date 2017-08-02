@@ -51,8 +51,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="q9T-Mb-MS6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="apx-BW-Dxt"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="apx-BW-Dxt">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Uwn-4u-D98" id="70f-3U-SBN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="a6h-gY-irv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="nameTextField" destination="6DZ-Jn-aAs" id="9Au-2b-8wI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiV-nV-c9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

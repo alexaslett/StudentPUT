@@ -59,7 +59,58 @@ class StudentController {
         
     }
     
-    // Post Students
-
+    
+    // Post students to the API
+    
+    static func putStudentWith(name: String, completion: @escaping (_ success: Bool) -> Void) {
+        //Build URL
+        
+        //Create the student
+        let student = Student(name: name)
+        
+        guard let url = baseURL?.appendingPathComponent(UUID().uuidString).appendingPathExtension("json") else {
+            completion(false);
+            return
+        }
+        
+        //Create a Request
+        var request = URLRequest(url: url)
+        //set the request parameters
+        request.httpMethod = "PUT"
+        //Covert the JSON into data
+        request.httpBody = student.jsonData
+        
+        //create a data task and resume
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            guard let data = data else { completion(false); return }
+            //Check for an error
+            if let error = error {
+                NSLog("Error: \(error.localizedDescription)")
+                completion(false)
+                return
+            } else {
+            students.append(student)
+            completion(true)
+            }
+        }
+        dataTask.resume()
+    }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
