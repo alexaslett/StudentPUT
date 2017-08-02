@@ -11,6 +11,7 @@
 		4DE705651F3233B900AC39D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE705631F3233B900AC39D1 /* Main.storyboard */; };
 		4DE705671F3233B900AC39D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE705661F3233B900AC39D1 /* Assets.xcassets */; };
 		4DE7056A1F3233B900AC39D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE705681F3233B900AC39D1 /* LaunchScreen.storyboard */; };
+		4DE705731F323FB900AC39D1 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE705721F323FB900AC39D1 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4DE705661F3233B900AC39D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE705691F3233B900AC39D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DE7056B1F3233B900AC39D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE705721F323FB900AC39D1 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				4DE7055F1F3233B900AC39D1 /* AppDelegate.swift */,
 				4DE705631F3233B900AC39D1 /* Main.storyboard */,
+				4DE705741F323FC200AC39D1 /* Models */,
 				4DE705711F3233C900AC39D1 /* Resources */,
 			);
 			path = StudentPut;
@@ -67,6 +70,14 @@
 				4DE7056B1F3233B900AC39D1 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4DE705741F323FC200AC39D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DE705721F323FB900AC39D1 /* Student.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE705601F3233B900AC39D1 /* AppDelegate.swift in Sources */,
+				4DE705731F323FB900AC39D1 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +318,7 @@
 				4DE705701F3233B900AC39D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
